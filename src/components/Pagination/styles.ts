@@ -8,6 +8,7 @@ export const PaginationContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.1rem;
   margin-top: 0.7rem;
   margin-bottom: 1rem;
 
@@ -20,7 +21,7 @@ export const PaginationContainer = styled.div`
 export const PageNumber = styled.button<PageNumberProps>`
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid ${props => (props.isActive ? '#3b82f6' : '#ffffff')};
+  border: 1px solid ${props => (props.isActive ? '#3b82f6' : 'transparent')};
   color: ${props => (props.isActive ? '#3b82f6' : '#1f2937')};
   padding: 5px 10px;
   margin: 0 1px;

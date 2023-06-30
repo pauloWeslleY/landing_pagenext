@@ -1,3 +1,4 @@
+'use client'
 import { PageNumber, PaginationContainer } from './styles'
 
 interface PaginationProps {

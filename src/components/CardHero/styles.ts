@@ -27,6 +27,7 @@ export const Card = styled.div`
 
   > span {
     font-weight: 800;
+    font-size: 0.95rem;
 
     color: ${props => props.theme.colors.gray._800};
     border-bottom-left-radius: 1rem;
