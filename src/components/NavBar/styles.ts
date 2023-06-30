@@ -50,7 +50,7 @@ export const Button = styled.button`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border: 1px solid ${props => props.theme.colors.blue._600};
+    border: 1px solid ${props => props.theme.colors.blue._400};
     color: ${props => props.theme.colors.blue._600};
   }
 `
