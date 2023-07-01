@@ -5,11 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '@/app/styles/theme'
 import GlobalStyle from '@/app/styles/global'
 
-interface ProviderProps {
-  children: ReactNode
-}
-
-export const StylesProvider = ({ children }: ProviderProps) => {
+export const StylesProvider = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />

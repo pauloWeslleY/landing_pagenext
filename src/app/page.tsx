@@ -4,6 +4,7 @@ import { NavBar } from '@/components/NavBar'
 import { CardHero } from '@/components/CardHero'
 import { Divider } from '@/components/Divider'
 import { PaginationHero } from '@/components/Pagination'
+import { InfoHero } from '@/components/InfoHero'
 
 export default function Home() {
   return (
@@ -20,6 +21,10 @@ export default function Home() {
         <Divider />
 
         <PaginationHero allPages={4} currentPage={3} />
+      </section>
+
+      <section>
+        <InfoHero />
       </section>
     </main>
   )
