@@ -1,8 +1,6 @@
 import { styled } from 'styled-components'
 
 export const NavBarContainer = styled.div`
-  /* background-color: ${props => props.theme.colors.zinc._100}; */
-
   width: 100%;
   max-width: 996px;
   margin: 0 auto;
@@ -10,6 +8,7 @@ export const NavBarContainer = styled.div`
   height: 45px;
 
   display: flex;
+  align-items: center;
   justify-content: space-around;
 
   nav {
@@ -31,26 +30,29 @@ export const SelectHero = styled.div`
 
   > select {
     padding: 0.4rem 0.6rem;
-    border-radius: 6px;
+    color: ${props => props.theme.colors.gray._700};
+    font-weight: 600;
+    border-radius: 8px;
   }
 `
 
 export const Button = styled.button`
-  padding: 0.6rem 0.7rem;
+  padding-inline: 0.8rem;
+  height: 2rem;
   color: ${props => props.theme.colors.zinc._800};
   background-color: transparent;
 
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
 
-  border-radius: 3rem;
+  border-radius: 2rem;
   border: 1px solid ${props => props.theme.colors.zinc._600};
   cursor: pointer;
 
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border: 1px solid ${props => props.theme.colors.blue._600};
+    border: 1px solid ${props => props.theme.colors.blue._400};
     color: ${props => props.theme.colors.blue._600};
   }
 `

@@ -1,10 +1,19 @@
 'use client'
-import { Card } from './styles'
+import { CardHeroItem } from './CardHeroItem'
+import { CardContainer } from './styles'
 
 export const CardHero = () => {
   return (
-    <Card>
-      <span>CardsHero</span>
-    </Card>
+    <CardContainer>
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+      <CardHeroItem />
+    </CardContainer>
   )
 }
