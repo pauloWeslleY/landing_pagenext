@@ -1,10 +1,8 @@
 'use client'
 import { DividerHero } from './styles'
 
-export const Divider = () => {
-  return (
-    <DividerHero>
-      <div />
-    </DividerHero>
-  )
-}
+export const Divider = () => (
+  <DividerHero>
+    <div />
+  </DividerHero>
+)

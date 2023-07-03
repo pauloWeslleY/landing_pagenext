@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.section`
   max-width: 956px;
   margin: 0 auto;
   margin-top: 2rem;
@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
   gap: 1rem;
 `
 
-export const Card = styled.div`
+export const Card = styled.article`
   display: flex;
   flex: 1 1 250px;
   flex-direction: column;
