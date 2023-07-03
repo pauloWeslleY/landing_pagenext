@@ -1,18 +1,18 @@
 'use client'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { ModalHero } from '../ModalHero'
 import { Card, CardImage } from './styles'
 
 export const CardHeroItem = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
 
-  const handleOpenModal = () => {
+  const handleOpenModal = useCallback(() => {
     setIsModalOpen(true)
-  }
+  }, [])
 
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     setIsModalOpen(false)
-  }
+  }, [])
 
   return (
     <>

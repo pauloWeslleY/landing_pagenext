@@ -10,7 +10,7 @@ export const CardContainer = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1.6rem;
 `
 
 export const Card = styled.article`
