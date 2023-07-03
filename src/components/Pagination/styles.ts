@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
-interface PageNumberProps {
-  isActive: boolean
+interface BtnPageProps {
+  active?: boolean | any
 }
 
 export const PaginationContainer = styled.div`
@@ -18,11 +18,11 @@ export const PaginationContainer = styled.div`
   }
 `
 
-export const PageNumber = styled.button<PageNumberProps>`
+export const BtnPage = styled.button<BtnPageProps>`
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid ${props => (props.isActive ? '#3b82f6' : 'transparent')};
-  color: ${props => (props.isActive ? '#3b82f6' : '#1f2937')};
+  border: 1px solid ${props => (props.active ? 'transparent' : '#3b82f6')};
+  color: ${props => (props.active ? '#1f2937' : '#3b82f6')};
   padding: 5px 10px;
   margin: 0 1px;
   cursor: pointer;
@@ -30,7 +30,7 @@ export const PageNumber = styled.button<PageNumberProps>`
   display: flex;
   align-items: center;
 
-  font-weight: ${props => (props.isActive ? 800 : 600)};
+  font-weight: ${props => (props.active ? 600 : 800)};
 
   &:hover {
     background: ${props => props.theme.colors.blue._400};

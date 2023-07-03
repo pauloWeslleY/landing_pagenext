@@ -24,4 +24,8 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
+
+  button {
+    cursor: pointer;
+  }
 `

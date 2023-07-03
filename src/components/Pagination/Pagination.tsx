@@ -1,13 +1,13 @@
 'use client'
-import { PageNumber, PaginationContainer } from './styles'
+import { PageButton } from './PageButton'
+import { PaginationContainer } from './styles'
 
 interface PaginationProps {
   allPages: number
-  currentPage: number
 }
 
 export const PaginationHero = (props: PaginationProps) => {
-  const { allPages, currentPage } = props
+  const { allPages } = props
   const pageNumbers: number[] = []
 
   for (let i = 1; i <= allPages; i++) {
@@ -18,9 +18,7 @@ export const PaginationHero = (props: PaginationProps) => {
     <PaginationContainer>
       <span>Página</span>
       {pageNumbers.map(number => (
-        <PageNumber key={number} isActive={currentPage === number}>
-          {number}
-        </PageNumber>
+        <PageButton key={number} title={number} />
       ))}
     </PaginationContainer>
   )

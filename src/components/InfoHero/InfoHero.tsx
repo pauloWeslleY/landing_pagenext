@@ -35,14 +35,14 @@ export const InfoHero = () => {
 
           <InfoFooter>
             <InfoBox>
-              <img src="/images/no-card-dark.webp" alt="" />
+              <img src="/images/no-card-dark.webp" alt="Card Logo" />
               <p>
                 <span>Não</span> é necessário Cartão de Crédito
               </p>
             </InfoBox>
             <span />
             <InfoBox>
-              <img src="/images/rating.webp" alt="" />
+              <img src="/images/rating.webp" alt="Rating Logo" />
               <p>
                 <span>4.9</span>/5 média de satisfação
               </p>

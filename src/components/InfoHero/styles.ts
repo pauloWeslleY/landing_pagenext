@@ -54,7 +54,7 @@ export const InfoText = styled.div`
 
   p {
     font-weight: 500;
-    margin-block: 1rem;
+    margin-block: 0.5rem;
 
     span {
       font-weight: 700;
@@ -80,6 +80,8 @@ export const Info = styled.div`
     width: 15rem;
     height: 3.5rem;
 
+    cursor: pointer;
+
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -88,6 +90,16 @@ export const Info = styled.div`
     border-radius: 5rem;
     background-color: ${props => props.theme.colors.blue._500};
     color: ${props => props.theme.colors.white};
+
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: ${props => props.theme.colors.blue._700};
+      color: ${props => props.theme.colors.zinc._900};
+
+      opacity: 0.7;
+      box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.8);
+    }
   }
 `
 

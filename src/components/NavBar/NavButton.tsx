@@ -1,6 +1,11 @@
 'use client'
+import { ButtonHTMLAttributes } from 'react'
 import { Button } from './styles'
 
-export const NavButton = ({ title }: { title: string }) => {
-  return <Button>{title}</Button>
+interface NavButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  title: string
+}
+
+export const NavButton = ({ title, ...rest }: NavButtonProps) => {
+  return <Button {...rest}>{title}</Button>
 }

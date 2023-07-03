@@ -1,8 +1,7 @@
-const theme = {
+export default {
   colors: {
     black: '#000000',
     white: '#ffffff',
-    primary: '#8257e6',
     red: '#ED2B2A',
     zinc: {
       _950: '#09090b',
@@ -45,5 +44,3 @@ const theme = {
     },
   },
 }
-
-export { theme }
