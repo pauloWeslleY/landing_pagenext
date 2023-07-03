@@ -25,6 +25,16 @@ export const Card = styled.article`
   -webkit-box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.1);
 
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+
+    -webkit-box-shadow: 1px 1px 10px 4px rgba(48, 162, 255, 0.6);
+    box-shadow: 1px 1px 10px 4px rgba(48, 162, 255, 0.6);
+  }
+
   > span {
     font-weight: 800;
     font-size: 0.95rem;
@@ -38,6 +48,8 @@ export const Card = styled.article`
 `
 
 export const CardImage = styled.div`
+  cursor: pointer;
+
   img {
     width: 100%;
     height: auto;
