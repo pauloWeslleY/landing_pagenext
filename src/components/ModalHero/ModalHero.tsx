@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
-import { ModalContainer, ModalContent } from './styles'
+import { AiOutlineClose } from 'react-icons/ai'
+import { ModalContainer, ModalContent, ModalClose } from './styles'
 
 interface ModalHeroProps {
   onClose: () => void
@@ -13,8 +14,12 @@ const ModalHero = ({ onClose, isOpen, children }: ModalHeroProps) => {
       {isOpen && (
         <ModalContainer>
           <ModalContent>
+            <ModalClose>
+              <button type="button" onClick={onClose}>
+                <AiOutlineClose />
+              </button>
+            </ModalClose>
             {children}
-            <button onClick={onClose}>Fechar</button>
           </ModalContent>
         </ModalContainer>
       )}

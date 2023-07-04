@@ -1,1 +1,6 @@
 export * from './ModalHero'
+export * from './ModalHeroTitle'
+export * from './ModalHeroDescription'
+export * from './ModalHeroImage'
+export * from './ModalHeroIcon'
+export * from './ModalHeroBoxIcon'

@@ -90,17 +90,19 @@ export const IconFooter = styled.a`
   background-color: ${props => props.theme.colors.zinc._100};
   color: ${props => props.theme.colors.zinc._500};
 
+  display: flex;
+
   font-size: 1.1rem;
 
   border-radius: 55%;
-  padding: 1.1rem;
+  padding: 0.985rem 1rem;
 
   transition: all 0.4s ease-in-out;
 
   &:hover {
     opacity: 0.7;
-    color: ${props => props.theme.colors.blue._700};
-    background-color: ${props => props.theme.colors.gray._500};
+    color: ${props => props.theme.colors.gray._100};
+    background-color: ${props => props.theme.colors.blue._600};
   }
 `
 
