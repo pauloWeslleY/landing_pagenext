@@ -14,9 +14,9 @@ import { Card, CardImage } from './styles'
 
 interface CardHeroItemProps {
   title: string
-  imageUrl: string
   description: string
-  videoURL: string
+  imageUrl: string
+  videoUrl: string
 }
 
 interface CardsProps {
@@ -25,7 +25,7 @@ interface CardsProps {
 
 export const CardHeroItem = ({ card }: CardsProps) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
-  const { title, description, imageUrl, videoURL } = card
+  const { title, description, imageUrl, videoUrl } = card
 
   const handleOpenModal = useCallback(() => {
     setIsModalOpen(true)
@@ -55,7 +55,7 @@ export const CardHeroItem = ({ card }: CardsProps) => {
           <iframe
             title={title}
             height="315"
-            src={videoURL}
+            src={videoUrl}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

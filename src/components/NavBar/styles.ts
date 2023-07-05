@@ -22,17 +22,34 @@ export const NavBarContainer = styled.div`
 export const SelectHero = styled.div`
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.4rem;
 
   > span {
     font-weight: 600;
   }
 
   > select {
-    padding: 0.4rem 0.6rem;
-    color: ${props => props.theme.colors.gray._700};
+    position: relative;
+    font-size: 0.885rem;
     font-weight: 600;
     border-radius: 8px;
+    border: 1px solid ${props => props.theme.colors.gray._700};
+
+    padding: 0.4rem 0.6rem;
+    color: ${props => props.theme.colors.gray._700};
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::after {
+      content: '\25BC';
+      position: absolute;
+      top: 50%;
+      right: 100px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
   }
 `
 

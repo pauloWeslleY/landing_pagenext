@@ -37,6 +37,10 @@ export const ModalClose = styled.div`
   padding: 0.545rem;
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: transparent;
     border: none;
 

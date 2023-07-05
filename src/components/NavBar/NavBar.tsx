@@ -21,8 +21,10 @@ export const NavBar = () => {
 
       <SelectHero>
         <span>Ordenar por</span>
-        <select name="value">
-          <option value="value">Data de Publicação</option>
+        <select>
+          <option value="option1">Data de Publicação </option>
+          <option value="option2">Data de Publicação 2</option>
+          <option value="option3">Data de Publicação 3</option>
         </select>
       </SelectHero>
     </NavBarContainer>

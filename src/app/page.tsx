@@ -7,6 +7,8 @@ import { PaginationHero } from '@/components/Pagination'
 import { InfoHero } from '@/components/InfoHero'
 import { FooterHero } from '@/components/Footer'
 
+import { CARDS as card } from '../../card_props.json'
+
 export default function Home() {
   return (
     <main>
@@ -15,7 +17,7 @@ export default function Home() {
 
       <section>
         <Divider />
-        <CardHero />
+        <CardHero cards={card} />
         <Divider />
 
         <PaginationHero allPages={4} />
