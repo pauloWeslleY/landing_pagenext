@@ -70,9 +70,8 @@ export const ModalTitle = styled.header`
 export const ModalImage = styled.div`
   margin-bottom: 0.895rem;
 
-  > img {
+  > iframe {
     width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 `

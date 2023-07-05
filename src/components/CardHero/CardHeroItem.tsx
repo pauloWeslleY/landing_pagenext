@@ -12,8 +12,20 @@ import {
 import MODAL_PROPS from '../ModalHero/[modal_icon_props]/modal_icons'
 import { Card, CardImage } from './styles'
 
-export const CardHeroItem = () => {
+interface CardHeroItemProps {
+  title: string
+  imageUrl: string
+  description: string
+  videoURL: string
+}
+
+interface CardsProps {
+  card: CardHeroItemProps
+}
+
+export const CardHeroItem = ({ card }: CardsProps) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+  const { title, description, imageUrl, videoURL } = card
 
   const handleOpenModal = useCallback(() => {
     setIsModalOpen(true)
@@ -27,33 +39,33 @@ export const CardHeroItem = () => {
     <>
       <Card>
         <CardImage onClick={handleOpenModal}>
-          <img src="/images/thumbnail.png" alt="Thumbnail" />
+          <img src={imageUrl} alt="Thumbnail" />
         </CardImage>
-        <span>Como aumentar sua Geração de Leads feat. Traktor</span>
+        <span>{title}</span>
       </Card>
 
       <ModalHero isOpen={isModalOpen} onClose={handleCloseModal}>
         <ModalHeroTitle>
           <h3>
-            <span>Webinar:</span> Como aumentar sua Geração de Leads feat.
-            Traktor
+            <span>Webinar:</span> {title}
           </h3>
         </ModalHeroTitle>
 
         <ModalHeroImage>
-          <img src="/images/thumbnail.png" alt="Thumbnail" />
+          <iframe
+            title={title}
+            height="315"
+            src={videoURL}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </ModalHeroImage>
 
         <ModalHeroDescription>
           <h3>Descrição</h3>
           <hr />
 
-          <p>
-            At accusam et voluptua sit et sadipscing sanctus dolor dolore
-            takimata, tempor dolor sadipscing invidunt magna gubergren. Voluptua
-            elitr stet at sed lorem sit labore. Voluptua dolore accusam justo
-            ipsum. Consetetur at dolor diam takimata et vero justo vero.
-          </p>
+          <p>{description}</p>
           <h3>Downloads</h3>
           <hr />
 
